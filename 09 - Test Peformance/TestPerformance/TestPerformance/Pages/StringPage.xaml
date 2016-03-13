@@ -8,6 +8,24 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
-
+        <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+            <TextBlock Margin="4">
+                <Run Text="Result: "/>
+                <Run Text="{x:Bind Result, Mode=OneWay}"/>
+                <Run Text=" miliseconds"></Run>
+            </TextBlock>
+            <Button Width="150"
+                    Margin="4"
+                    Content="+ operation" 
+                    Click="PlusOperationButton_OnClick"/>
+            <Button Width="150"
+                    Margin="4"
+                    Content="StringBuilder" 
+                    Click="StringBuilder_OnClick"/>
+            <Button Width="150"
+                    Margin="4"
+                    Content="string.Concat()" 
+                    Click="stringConcat_OnClick"/>
+        </StackPanel>
     </Grid>
 </Page>
