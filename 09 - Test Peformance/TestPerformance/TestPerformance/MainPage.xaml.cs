@@ -20,13 +20,13 @@ namespace TestPerformance
 
         private void LoopAndLinqButton_OnClick(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(LoopAndLinqPage));
         }
 
 
         private void TryCatButon_OnClick(object sender, RoutedEventArgs e)
         {
-
+            Frame.Navigate(typeof(TryCatchPage));
         }
     }
 }
