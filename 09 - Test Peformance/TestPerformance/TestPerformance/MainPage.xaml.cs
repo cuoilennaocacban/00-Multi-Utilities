@@ -1,6 +1,5 @@
-﻿using System;
-using System.Diagnostics;
-using System.Text;
+﻿using Windows.UI.Xaml;
+using TestPerformance.Pages;
 
 namespace TestPerformance
 {
@@ -12,30 +11,22 @@ namespace TestPerformance
         public MainPage()
         {
             InitializeComponent();
-            Loaded += MainPage_Loaded;
         }
 
-        private void MainPage_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        private void StringTestButton_OnClick(object sender, RoutedEventArgs e)
         {
-            Debug.WriteLine("Start the test");
-            //Test the string concat
-            for (int i = 0; i < 1000000; i++)
-            {
-                string s = "Tuan Tran Van";
-                s += " welcome to my test";
-                s += " and hello world";
-                s += i;
+            Frame.Navigate(typeof (StringPage));
+        }
 
-                //StringBuilder s = new StringBuilder();
-                //s.Append("Tuan Tran Van");
-                //s.Append(" welcome to my test");
-                //s.Append(" and hello world");
-                //s.Append(i);
+        private void LoopAndLinqButton_OnClick(object sender, RoutedEventArgs e)
+        {
 
-                //string s = string.Concat("Tuan Tran Van", " welcome to my test", " and hello world", i);
+        }
 
-            }
-            Debug.WriteLine("Test end");
+
+        private void TryCatButon_OnClick(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

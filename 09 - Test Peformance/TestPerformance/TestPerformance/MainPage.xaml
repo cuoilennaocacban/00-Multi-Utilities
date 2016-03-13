@@ -10,13 +10,16 @@
         <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
             <Button Width="150"
                     Margin="4"
-                    Content="String test" />
+                    Content="String test" 
+                    Click="StringTestButton_OnClick"/>
             <Button Width="150"
                     Margin="4"
-                    Content="Loop and Linq test" />
+                    Content="Loop and Linq test" 
+                    Click="LoopAndLinqButton_OnClick"/>
             <Button Width="150"
                     Margin="4"
-                    Content="Try catch test" />
+                    Content="Try catch test" 
+                    Click="TryCatButon_OnClick"/>
         </StackPanel>
     </Grid>
 </Page>
