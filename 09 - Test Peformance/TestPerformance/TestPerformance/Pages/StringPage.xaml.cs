@@ -1,21 +1,20 @@
-﻿using System;
-using System.Diagnostics;
-using System.Text;
+﻿using System.Diagnostics;
+using Windows.UI.Xaml;
 
-namespace TestPerformance
+namespace TestPerformance.Pages
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class MainPage
+    public sealed partial class StringPage
     {
-        public MainPage()
+        public StringPage()
         {
             InitializeComponent();
-            Loaded += MainPage_Loaded;
+            Loaded += StringPage_Loaded;
         }
 
-        private void MainPage_Loaded(object sender, Windows.UI.Xaml.RoutedEventArgs e)
+        private void StringPage_Loaded(object sender, RoutedEventArgs e)
         {
             Debug.WriteLine("Start the test");
             //Test the string concat
